@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bg{
+    background-color: #1A0B2E;
+}
+.word-first{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+nav{
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    cursor: pointer;
+}
+.last-word{
+     font-size: 2rem;
+      background: linear-gradient(to right, #F7E93F, #FB09B4,#9100F8);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: bolder;
+}
+nav ul{
+    display: flex;
+    list-style-type:none;
+    gap:32px;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+.subscribe-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 44px;
+    padding: 0 20px;
+    background: linear-gradient(to right, #F7E93F, #FB09B4,#9100F8);
+}
+#section1{
+    width: 100vw;
+    height: auto;
+    padding-bottom: 50px;
+    background-color:#d6d3e1;
+    background-image: url(./B13-A02-TechWave/assets/hero-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.middle-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    width: 100%;
+    gap: 40px;
+}
+.img-1{
+    width: 20%;
+}
+
+.img-1 img{
+    width: 100%;
+    height: auto;
+}
+.lower-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wave{
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.lower-section p{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btn-section{
+    display: flex;
+    gap: 20px;
+}
+.btn1{
+    width: 200px;
+    height: 50px;
+   background: linear-gradient(to right, #F7E93F, #FB09B4,#9100F8);
+   border-radius: 38px;
+   font-size: 1.2rem;
+   padding: 10 20px;
+   cursor: pointer;
+}
+.btn2{
+    background-color: #1A0B2E;
+    color: green;
+    border: 2px solid green;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 38px;
+    cursor: pointer;
+}
+#microphone{
+    width: 8%;
+    position: absolute;
+    top: 26%;
+    right: 46%;
+}
+.new{
+    background-color: #00FF88;
+    padding: 10px 20px ;
+    border-radius: 39px;
+    font-weight: bold;
+    position: absolute;
+    top: 23%;
+    right: 40%;
+    cursor: pointer;
+}
