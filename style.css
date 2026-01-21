@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-#bg{
+.bg{
     background-color: #1A0B2E;
 }
 .word-first{
@@ -36,6 +36,9 @@ nav ul{
     font-size: 16px;
     cursor: pointer;
 }
+.Hamburgar{
+    display: none;
+}
 .subscribe-btn{
     display: flex;
     justify-content: center;
@@ -49,15 +52,19 @@ nav ul{
     background: linear-gradient(to right, #F7E93F, #FB09B4,#9100F8);
 }
 #section1{
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding-bottom: 50px;
-    background-color:#d6d3e1;
+    
     background-image: url(./B13-A02-TechWave/assets/hero-bg.png);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-position: center top;
+    
 }
+
+
 .middle-box{
     display: flex;
     flex-direction: column;
@@ -119,6 +126,47 @@ nav ul{
     top: 26%;
     right: 46%;
 }
+.potcast-info{
+    
+    
+    width: 75%;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    
+    flex-direction: column;
+}
+.potcase-head{
+   text-align: center;
+   font-size: 3rem;
+   color: #FFFFFF;
+}
+.potcast-describtion{
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    margin-bottom: 150px;
+}
+.card-section{
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         justify-content:space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card h1{
+    font-size: 3rem;
+    color: #00FF88;
+}
+.card p{
+    font-size: 18px;
+    color: #FFFFFF;
+}
 .new{
     background-color: #00FF88;
     padding: 10px 20px ;
@@ -128,4 +176,190 @@ nav ul{
     top: 23%;
     right: 40%;
     cursor: pointer;
+}
+.selection2{
+    width: 75%;
+    margin: 0 auto;
+}
+.selection2-head{
+    font-size: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 column */
+    grid-auto-rows: 200px;                  /* row height adjust */
+    gap: 20px;
+}
+
+.grid-1{
+    grid-row: span 2;   /* first card spans 2 rows */
+    background-color: #00FF88;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.card-23{
+    grid-column: span 2;   /* second row cards span 2 columns if needed */
+    background-color: rebeccapurple;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.last{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.grid-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    color: #FFFFFF;
+    background-color: rgba(53, 17, 101, 0.4);
+}
+
+.grid-items h3{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.grid-items p{
+    font-size: 0.9rem;
+    margin: 0;
+}
+.section3{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 80px;
+    justify-content: start;
+}
+.video-thumb{
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(53, 17, 101, 0.4);
+    text-align: left;           /* Left align content */
+    padding: 10px;              /* X-axis padding */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video-thumb img{
+    width: 100%;
+    display: block;
+    border-radius: 12px;        /* Optional, match container */
+}
+
+.play-btn{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #fff;
+    opacity: 0.8;
+    background-color: rgba(97, 101, 17, 0.4);
+    border-radius: 50%;         /* optional circle */
+}
+
+.video-thumb h2{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.video-thumb p{
+    color: #ced6cf;
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+}
+
+.time{
+    color: #00FF88;
+    font-size: 1rem;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #00FF88;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:576px){
+    .Hamburgar{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .subscribe-btn{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between; 
+        padding: 0 20px; 
+    }
+
+    #section1{
+        background-position: center 2%; 
+    }
+
+    .middle-box{
+        padding-top: 50px;
+    }
+
+   
+    #microphone{
+        top: 16%;      
+        width: 10%;  
+        right: 45%;  
+    }
+    .new{
+        top: 14%;
+        right: 34%;
+        padding: 5px 10px;
+    }
+    .lower-section p{
+        text-align: center;
+    }
+    .card-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-grid{
+    grid-template-columns: repeat(1, 1fr);  
+     }
+     .selection2-head{
+        font-size: 1.5rem;
+     }
+     .section3{
+        grid-template-columns: repeat(1,1fr);
+     }
+     .play-btn{
+        top: 10%;
+        left: 35%;
+     }
+
 }
