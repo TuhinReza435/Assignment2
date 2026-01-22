@@ -1,8 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Montserrat সরিয়ে এখানে Poppins লিখে দিন */
+    font-family: 'Poppins', sans-serif;
 }
+
 .bg{
     background-color: #1A0B2E;
 }
